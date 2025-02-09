@@ -35,4 +35,93 @@ Display on Website: The website uses the thumbnail for previews.
 Ensure all data is encrypted in transit and at rest. Utilize client-side encryption or SSL/TLS for secure data transmission to and from S3.
 Data stored on S3 should always be encrypted to safeguard it from unauthorized access.
 
-hi
+
+
+cloud watch logs,
+Focus:
+
+CloudWatch is centered on real-time monitoring and operational performance.
+CloudTrail is centered on recording and auditing API calls and user activities.
+Data Collection:
+
+CloudWatch collects metrics and logs from AWS services and applications.
+CloudTrail records API calls and user activities within your AWS account.
+
+CloudWatch is used for performance monitoring, setting alarms, and visualizing logs.
+CloudTrail is used for auditing, security analysis, and compliance reporting.
+
+vpc flow logs,
+Amazon VPC Flow Logs
+Captures information about the IP traffic going to and from network interfaces in your Virtual Private Cloud (VPC),
+aiding in network monitoring and security analysis.
+
+
+iam role configurations, aws system manager, elastic blob storage
+
+aws elastic bean stack
+  how to configure https to all the ec2 sintaces , s3 bucket policies, iam policies, s3 server side encrption with kms, s3 access logs, cloud trail logs,
+versioning, Regularly snapshot EBS volumes for backups., elastic file storage, aws route 53- use dnssec to protect against dns spoofing,  use route 53 resolver
+
+ Amazon RDS- Managed relational databases.
+AWS KMS (Key Management Service)
+Security Best Practices:
+
+Use customer-managed keys for granular control.
+
+Regularly rotate encryption keys.
+
+Use key policies to restrict access.
+AWS Secrets Manager
+What it is: Store and manage secrets.
+
+Security Best Practices:
+
+Use IAM policies to control access.
+
+Enable automatic rotation for secrets.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
