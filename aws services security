@@ -1,0 +1,38 @@
+Amazon EC2 (Elastic Compute Cloud)
+Vulnerabilities in the operating systems that customers install inside EC2 instances.
+Vulnerabilities in individual applications that you deploy on EC2.
+Network configuration mistakes.
+Weak access controls in your AWS account.
+Overly permissive Identity and Access Management (IAM) settings may make it easier for attackers
+or malicious insiders to modify EC2 instance configurations or change the workloads running on EC2.
+In most cases, VMs hosted on EC2 store persistent data using Amazon EBS, a block storage service.
+Oversights in the way EBS is configured – such as forgetting to encrypt EBS volumes, 
+which are not generally encrypted by default – could expose sensitive data to attack.
+(To be clear, EBS is a separate service from EC2, so insecure storage settings aren’t a risk to EC2 per se; 
+nonetheless, since EBS and EC2 go hand-in-hand, 
+weak security for EBS often translates to security issues for any workloads hosted on EC2.)
+EC2 instances can be vulnerable to attacks through a variety of vectors.
+
+
+AWS Lambda
+AWS Lambda handles the infrastructure, scaling, and maintenance, allowing you to focus on your application's functionality.
+AWS Lambda is a serverless computing service that allows you to run code in response to events without managing servers.
+Here's a simple scenario to illustrate its use:
+Scenario: Automatic Image Resizing
+
+Imagine you have a website where users upload images. You want these images to be automatically resized to create thumbnails for previews. Manually resizing each image would be time-consuming and inefficient. With AWS Lambda, you can automate this process:
+
+User Uploads an Image: A user uploads an image to an Amazon S3 bucket.
+
+Trigger Lambda Function: The upload event triggers an AWS Lambda function.
+
+Process the Image: The Lambda function resizes the image to create a thumbnail.
+
+Store the Thumbnail: The resized image is saved back to the S3 bucket.
+
+Display on Website: The website uses the thumbnail for previews.
+
+Ensure all data is encrypted in transit and at rest. Utilize client-side encryption or SSL/TLS for secure data transmission to and from S3.
+Data stored on S3 should always be encrypted to safeguard it from unauthorized access.
+
+hi
